@@ -1,0 +1,32 @@
+# Directories #
+/build/
+/bin/
+target/
+eclipse-launch-profiles/
+*.class
+ 
+# Package Files #
+*.jar
+*.war
+*.ear
+*.db
+ 
+ 
+######################
+# Eclipse
+######################
+ 
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
