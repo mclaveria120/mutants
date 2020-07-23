@@ -24,11 +24,7 @@ public class StatsController {
 		StatsDTO statsDTO = new StatsDTO();
 		statsDTO.setCount_human_dna(stats.getNumberOfHumans());
 		statsDTO.setCount_mutant_dna(stats.getNumberOfMutants());
-		if(stats.getNumberOfHumans()!=0){
-			statsDTO.setRatio(stats.getNumberOfMutants()/stats.getNumberOfHumans());
-		}else{
-			statsDTO.setRatio(0);
-		}
+		statsDTO.setRatio(stats.getNumberOfHumans()!=0 ? stats.getNumberOfMutants()* 1.0/stats.getNumberOfHumans() : 0);
 		return statsDTO;
 	}
 }
